@@ -1,4 +1,4 @@
-#  To Find the factorial of any number.
+# Write Python programme To Find the factorial of any number.
 num=int(input("Enter the number:"))
 Fact=1
 if num==0:
@@ -10,7 +10,7 @@ else:
         Fact=Fact*i
 print("Factorial of ",num," is",Fact)
 
-# To check whether a number is prime or composite.
+# Write Python programme To check whether a number is prime or composite.
 num=int(input("Enter the number:"))
 if num<1:
     print("Enter a number greater than 1")
@@ -24,7 +24,7 @@ else:
     else:
         print(num,"is a prime number")
         
- #To check whether a given string is palindrome or not.
+ # Write Python programme To check whether a given string is palindrome or not.
  def Palindrome(a):
     b=a.lower()
     if b==b[::-1]:
@@ -34,7 +34,7 @@ else:
     
 print(Palindrome('Malayalam'))
 
-#To get the third side of right_angled triangle from two given sides.
+# Write Python programme To get the third side of right_angled triangle from two given sides.
 def Pythagoras(Height,Base,Hypotenuse):
     if Height==str("x"):
         Height=((Hypotenuse**2)-(Base**2))**0.5
@@ -50,7 +50,7 @@ def Pythagoras(Height,Base,Hypotenuse):
  print(Pythagoras(3,'x',5))
  print(Pythagoras(3,4,'x'))
  
- #To find the frequency of each of the characters present in a given string.
+ # Write Python programme To find the frequency of each of the characters present in a given string.
  string=input("Enter the string:")
 d={}
 for i in string:
