@@ -1,4 +1,4 @@
-Q.1. Write a python programme to display all the header tags from 'en.wikipedia.org/wiki/Main_Page'?
+Q.1. Write a python program to display all the header tags from 'en.wikipedia.org/wiki/Main_Page'?
 Ans:
 from bs4 import BeautifulSoup
 import requests
@@ -7,7 +7,7 @@ Soup = BeautifulSoup(html.content)
 titles = Soup.find_all(['h1', 'h2','h3','h4','h5','h6'])
 print('List of header tags :', *titles, sep='\n\n')
 
-Q.2. Write a python programme to diplay IMDb's top rated 100 movies data(i.e. Name,IMDB rating,Year of release)?
+Q.2. Write a python program to display IMDB's top rated 100 movies data(i.e. Name,IMDB rating,Year of release)?
 Ans:
 from bs4 import BeautifulSoup
 import requests
@@ -35,7 +35,7 @@ for m in movies:
 Movies=pd.DataFrame({'Movie':MoviesName,'Year of Release':Year,'Rating':Rating},index=range(1,101))
 Movies.head(20)
 
-Q.3. Write a python programme to diplay IMDb's top rated 100 Indian movies data(i.e. Name,IMDB rating,Year of release)?
+Q.3. Write a python program to display IMDB's top rated 100 Indian movies data(i.e. Name,IMDB rating,Year of release)?
 Ans:
 from bs4 import BeautifulSoup
 import requests
@@ -81,10 +81,10 @@ for i in dv:
 Books=pd.DataFrame(Book,index=range(1,7))
 Books
 
-Q.5 Write a python program to dcrape cricket rankings from 'www.icc-cricket.com'You have to scrape:
-i) Top 10 ODI teams in men cricket along wit the records for matches,points and rating.
+Q.5 Write a python program to scrape cricket rankings from 'www.icc-cricket.com'You have to scrape:
+i) Top 10 ODI teams in men cricket along with the records for matches,points and rating.
 ii) Top 10 ODI batsman in men along with records of their team and rating.
-iii) Top 10 ODI bowlers  along with records of their team and rating.
+iii) Top 10 ODI bowlers along with records of their team and rating.
 Ans:
 i)
 from bs4 import BeautifulSoup
@@ -133,8 +133,8 @@ ODIBOWL=pd.DataFrame(bdata,index=range(1,11))
 ODIBOWL
 
 
-Q.6 Write a python program to dcrape cricket rankings from 'www.icc-cricket.com'You have to scrape:
-i) Top 10 ODI teams in women cricket along wit the records for matches,points and rating.
+Q.6 Write a python program to scrape cricket rankings from 'www.icc-cricket.com'You have to scrape:
+i) Top 10 ODI teams in women cricket along with the records for matches,points and rating.
 ii) Top 10 ODI players in women along with records of their team and rating.
 iii) Top 10 ODI women's all rounder along with records of their team and rating.
 Ans:
